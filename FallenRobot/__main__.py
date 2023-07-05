@@ -72,15 +72,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*ʜᴇʏ* {}, 🔥
 
 *๏ ᴛʜɪs ɪs* {} !
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
  
-[𝙹𝚘𝚒𝚗 𝚖𝚢 𝚗𝚎𝚝𝚠𝚘𝚛𝚔](@NIDHI_NETWORKS)
-[𝙼𝚞𝚜𝚒𝚌  𝚋𝚘𝚝](http://t.me/Nidhi_music_bot)
+➻ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
+
+*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+*┏━━━━━━━━━❥
+┣•Cʀᴇᴀᴛᴏʀ  ~ [𝙳𝙴𝚅 𝙱𝙰𝙱𝚈](https://t.me/YOUR_BF_BABY) 
+┣•Nᴇᴛᴡᴏʀᴋ ~ [Nᴇᴛᴡᴏʀᴋ](https://t.me/NIDHI_NETWORKS)
+┣•ᴍᴜꜱɪᴄ ʙᴏᴛ ~ [𝙽𝙸𝙳𝙷𝙸  𝙼𝚄𝚂𝙸𝙲  𝙱𝙾𝚃](https://t.me/nidhi_music_bot)
+┗━━━━━━━━━❥*
 """
 
 buttons = [
@@ -99,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data=url=f"https://te.legra.ph/file/ebee76577947b83208dac.jpg"),
+        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", url=f"https://te.legra.ph/file/ebee76577947b83208dac.jpg"),
     ],
 ]
 
@@ -206,7 +209,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgEAAxkBAAEJmWFkpUenYH6c0R_tamGA1m4yGavFfgACGQIAAtJSGETVYFCS3x435i8E"
+                "CAACAgUAAx0CdDzCkQAD12Slln8yMRBREfF0xMfQVhdIKckVAAJ0BgACxjLIVqZ8hYL4-ijdLwQ"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -217,8 +220,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>  [𝙼𝚞𝚜𝚒𝚌  𝚋𝚘𝚝](http://t.me/Nidhi_music_bot)"
-  .format(
+            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code> || ᴍᴀᴅᴇ ʙy 🥰 [ᴅ℮ṽ](https://t.me/YOUR_BF_BABY) ||".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -357,7 +359,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
             f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
             f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
-            "\n────────────────────"
+             "\n*➻ [𝙳𝙴𝚅 𝙱𝙰𝙱𝚈](https://t.me/YOUR_BF_BABY)*
+             "\n────────────────────"
             "\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
             "\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
             "\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ."
@@ -373,16 +376,16 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="💖 𝙲𝚑𝚊𝚝𝚝𝚒𝚗𝚐 🤭", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                            text="🍂 ᴄᴏᴍᴍᴀɴᴅs 🍂", callback_data="help_back"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="sᴏᴜʀᴄᴇ",
-                            callback_data=url=f"https://te.legra.ph/file/ebee76577947b83208dac",
+                            text="🖤 sᴏᴜʀᴄᴇ 🖤",
+                            url=f"https://te.legra.ph/file/ebee76577947b83208dac",
                         ),
                     ],
                     [
@@ -400,19 +403,19 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="💖 sᴜᴩᴩᴏʀᴛ 💖", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="💫 ᴜᴩᴅᴀᴛᴇs 💫", url=f"https://t.me/NIDHI_NETWORKS"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="𝙼𝚞𝚜𝚒𝚌  𝚋𝚘𝚝",
-                            url=f"http://t.me/Nidhi_music_bot",
+                            text="😴 𝙳𝙴𝚅 𝙱𝙰𝙱𝚈 🤭",
+                            url=f"https://t.me/YOUR_BBABY",
                         ),
                     ],
                     [
@@ -725,6 +728,7 @@ def main():
 ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
 ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
 ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
+  ★ **𝙳𝙴𝚅 𝙱𝙰𝙱𝚈  :** [𝙳𝙴𝚅 𝙱𝙰𝙱𝚈](https://t.me/YOUR_BF_BABY)`
 ┗•❅────✧❅✦❅✧────❅•┛""",
                 parse_mode=ParseMode.MARKDOWN,
             )

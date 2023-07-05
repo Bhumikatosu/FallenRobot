@@ -76,9 +76,11 @@ PM_START_TEXT = """
 
 *๏ ᴛʜɪs ɪs* {} !
 ➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-
 ──────────────────
 *๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+ 
+[𝙹𝚘𝚒𝚗 𝚖𝚢 𝚗𝚎𝚝𝚠𝚘𝚛𝚔](@NIDHI_NETWORKS)
+[𝙼𝚞𝚜𝚒𝚌  𝚋𝚘𝚝](http://t.me/Nidhi_music_bot)
 """
 
 buttons = [
@@ -97,7 +99,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="https://te.legra.ph/file/ebee76577947b83208dac.jpg"),
+        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data=url=f"https://te.legra.ph/file/ebee76577947b83208dac.jpg"),
     ],
 ]
 
@@ -215,7 +217,8 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>  [𝙼𝚞𝚜𝚒𝚌  𝚋𝚘𝚝](http://t.me/Nidhi_music_bot)"
+  .format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -367,7 +370,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="💖𝙲𝚑𝚊𝚝𝚝𝚒𝚗𝚐🤭", callback_data="fallen_support"
+                            text="💖 𝙲𝚑𝚊𝚝𝚝𝚒𝚗𝚐 🤭", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
@@ -379,7 +382,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="sᴏᴜʀᴄᴇ",
-                            callback_data="https://te.legra.ph/file/ebee76577947b83208dac",
+                            callback_data=url=f"https://te.legra.ph/file/ebee76577947b83208dac",
                         ),
                     ],
                     [
@@ -408,8 +411,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ",
-                            url="https://te.me/II_VNND_WORLD_II",
+                            text="𝙼𝚞𝚜𝚒𝚌  𝚋𝚘𝚝",
+                            url=f"http://t.me/Nidhi_music_bot",
                         ),
                     ],
                     [

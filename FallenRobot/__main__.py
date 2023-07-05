@@ -84,7 +84,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="😴 𝙰𝚍𝚍 𝚖𝚎 𝚖𝚘𝚒 𝚋𝚊𝚋𝚢 🔥",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -93,11 +93,11 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="fallen_"),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="✨ 𝙲𝚑𝚊𝚝𝚝𝚒𝚗𝚐 ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="source_"),
+        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="https://te.legra.ph/file/ebee76577947b83208dac.jpg"),
     ],
 ]
 
@@ -204,7 +204,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+                "CAACAgEAAxkBAAEJmWFkpUenYH6c0R_tamGA1m4yGavFfgACGQIAAtJSGETVYFCS3x435i8E"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -367,7 +367,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
+                            text="💖𝙲𝚑𝚊𝚝𝚝𝚒𝚗𝚐🤭", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
@@ -379,7 +379,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
+                            callback_data="https://te.legra.ph/file/ebee76577947b83208dac",
                         ),
                     ],
                     [
@@ -409,7 +409,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="ɢɪᴛʜᴜʙ",
-                            url="https://github.com/AnonymousX1025",
+                            url="https://te.me/II_VNND_WORLD_II",
                         ),
                     ],
                     [

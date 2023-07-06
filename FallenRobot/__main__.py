@@ -359,7 +359,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
             f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
             f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
-                *➻ [𝙳𝙴𝚅 𝙱𝙰𝙱𝚈](https://t.me/YOUR_BF_BABY)*
+               [𝙳𝙴𝚅 𝙱𝙰𝙱𝚈](https://t.me/YOUR_BF_BABY)
              "\n────────────────────"
             "\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
             "\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
